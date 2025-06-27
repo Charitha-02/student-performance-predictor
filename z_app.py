@@ -1,11 +1,10 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 
 # Load the trained model
-model_path = "d_data/best_model.pkl"
-
-
+model_path = os.path.join(os.path.dirname(__file__), "d_data", "best_model.pkl")
 model = pickle.load(open(model_path, "rb"))
 
 # Streamlit page setup
