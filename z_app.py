@@ -3,7 +3,8 @@ import pandas as pd
 import pickle
 
 # Load the trained model
-model_path = "best_model.pkl"
+model_path = "d_data/best_model.pkl"
+
 
 model = pickle.load(open(model_path, "rb"))
 
